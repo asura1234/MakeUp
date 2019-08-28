@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="MakeUpApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RLh-bf-1c3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6c-py-dvH" customClass="ARSCNView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </sceneKitView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGx-S1-I18">
+                                <rect key="frame" x="45" y="64" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6KJ-mT-Asb"/>
+                                    <constraint firstAttribute="width" constant="60" id="fkX-yU-b5z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="redButtonTouchUpInside:" destination="BV1-FR-VrT" eventType="touchUpInside" id="DrW-EU-mKQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWi-S1-KCe">
+                                <rect key="frame" x="157.66666666666666" y="64" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="XNx-gM-Oj4"/>
+                                    <constraint firstAttribute="width" constant="60" id="wVb-qC-Y4B"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="blackButtonTouchUpInside:" destination="BV1-FR-VrT" eventType="touchUpInside" id="RsU-0i-bUP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tw8-ih-YSG">
+                                <rect key="frame" x="269" y="69" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0lJ-30-OQy"/>
+                                    <constraint firstAttribute="height" constant="50" id="8QN-Fk-C9Y"/>
+                                </constraints>
+                                <state key="normal" image="gobackward" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clearButtonTouchUpInside:" destination="BV1-FR-VrT" eventType="touchUpInside" id="v18-66-dXI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bWi-S1-KCe" firstAttribute="leading" secondItem="sGx-S1-I18" secondAttribute="trailing" constant="52.666666666666657" id="1vi-NK-OTl"/>
+                            <constraint firstAttribute="bottom" secondItem="E6c-py-dvH" secondAttribute="bottom" id="4Ch-Kb-0fx"/>
+                            <constraint firstItem="bWi-S1-KCe" firstAttribute="top" secondItem="GBj-4O-Whc" secondAttribute="top" constant="20" id="7hT-q6-9HJ"/>
+                            <constraint firstItem="bWi-S1-KCe" firstAttribute="centerX" secondItem="RLh-bf-1c3" secondAttribute="centerX" id="Art-9K-kN9"/>
+                            <constraint firstItem="E6c-py-dvH" firstAttribute="trailing" secondItem="GBj-4O-Whc" secondAttribute="trailing" id="S1K-95-spk"/>
+                            <constraint firstItem="sGx-S1-I18" firstAttribute="top" secondItem="bWi-S1-KCe" secondAttribute="top" id="UnJ-TS-2Ni"/>
+                            <constraint firstItem="bWi-S1-KCe" firstAttribute="baseline" secondItem="sGx-S1-I18" secondAttribute="baseline" id="XVN-Jz-Ggs"/>
+                            <constraint firstItem="E6c-py-dvH" firstAttribute="leading" secondItem="GBj-4O-Whc" secondAttribute="leading" id="hmq-Pd-FS5"/>
+                            <constraint firstItem="tw8-ih-YSG" firstAttribute="centerY" secondItem="bWi-S1-KCe" secondAttribute="centerY" id="wO4-5c-PmD"/>
+                            <constraint firstItem="E6c-py-dvH" firstAttribute="top" secondItem="RLh-bf-1c3" secondAttribute="top" id="yHv-rs-Wlk"/>
+                            <constraint firstItem="tw8-ih-YSG" firstAttribute="leading" secondItem="bWi-S1-KCe" secondAttribute="trailing" constant="51.333333333333343" id="ybV-TI-0OX"/>
+                            <constraint firstItem="bWi-S1-KCe" firstAttribute="firstBaseline" secondItem="sGx-S1-I18" secondAttribute="firstBaseline" id="zUT-6C-Ojr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GBj-4O-Whc"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="E6c-py-dvH" id="Gr4-Uw-Z4A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="98.275862068965523"/>
+        </scene>
+        <!--Unsupported View Controller-->
+        <scene sceneID="QPm-sc-AhW">
+            <objects>
+                <viewController storyboardIdentifier="unsupportedDeviceMessage" id="Ww5-bb-kFx" userLabel="Unsupported View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nKl-Ig-Sg0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unsupported Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqL-yC-UYf">
+                                <rect key="frame" x="20" y="290.33333333333331" width="335" height="31.666666666666686"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ach-rh-boK">
+                                <rect key="frame" x="20" y="330" width="335" height="152.33333333333337"/>
+                                <string key="text">ARKit face tracking requires a device with a TrueDepth front-facing camera.
+
+Shipping apps must support devices without face tracking. In your app, offer UI to launch face tracking features only if the current device is supported.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oqL-yC-UYf" firstAttribute="centerX" secondItem="nKl-Ig-Sg0" secondAttribute="centerX" id="4XK-M5-Qld"/>
+                            <constraint firstItem="Ach-rh-boK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nKl-Ig-Sg0" secondAttribute="leading" constant="20" symbolic="YES" id="AFv-0A-dZI"/>
+                            <constraint firstItem="oqL-yC-UYf" firstAttribute="width" secondItem="Ach-rh-boK" secondAttribute="width" id="FAc-2f-dTL"/>
+                            <constraint firstItem="Ach-rh-boK" firstAttribute="centerY" secondItem="nKl-Ig-Sg0" secondAttribute="centerY" id="J2Q-vj-ifu"/>
+                            <constraint firstItem="Ach-rh-boK" firstAttribute="centerX" secondItem="nKl-Ig-Sg0" secondAttribute="centerX" id="ME0-ye-UxJ"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ach-rh-boK" secondAttribute="trailing" constant="20" symbolic="YES" id="hbq-EQ-aUs"/>
+                            <constraint firstItem="Ach-rh-boK" firstAttribute="top" secondItem="oqL-yC-UYf" secondAttribute="bottom" constant="8" symbolic="YES" id="mW3-Zk-UIb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xCr-dq-97a"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01d-4b-zAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="97.536945812807886"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gobackward" catalog="system" width="58" height="64"/>
+    </resources>
+</document>
