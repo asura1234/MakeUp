@@ -2,4 +2,5 @@
 An AR app that allows the user to draw makeup on his or her face. The app is made with Apple's ARKit. 
 # Result
 ![](DemoGif.gif)
+
 [Demo Video](MakeUpAppDemo.mov)
