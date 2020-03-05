@@ -7,6 +7,6 @@ This coding challenge is part of the interview process for the graphics / intera
 Most AR filters are either in the ball park of some facial motion (blinking, opening of the mouth etc) triggering some preprogrammed animation, or adding bunny ears to the users face. I wanted something more "interactive". So I made an AR app with ARKit that allows the user to draw makeup on his or her face. 
 
 ## Result
+[Demo Video](MakeUpAppDemo.mov)
 ![](DemoGif.gif)
 
-[Demo Video](MakeUpAppDemo.mov)
