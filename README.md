@@ -8,5 +8,6 @@ Most AR filters are either in the ball park of some facial motion (blinking, ope
 
 ## Result
 [Demo Video](MakeUpAppDemo.mov)
+
 ![](DemoGif.gif)
 
